@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 // Supports this package's flat plain-scalar frontmatter and inline file links.
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const errors = [];
-const required = ['SKILL.md', 'README.md', 'README.pt-BR.md', 'CONTRIBUTING.md',
+const required = ['SKILL.md', 'README.md', 'CONTRIBUTING.md',
   'references', 'examples', 'evaluations'];
 for (const item of required) {
   try { await stat(path.join(root, item)); }

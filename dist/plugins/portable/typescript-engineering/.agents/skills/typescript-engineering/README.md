@@ -6,7 +6,7 @@
 ![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-5B21B6)
 ![Framework independent](https://img.shields.io/badge/core-framework_independent-0F766E)
 
-[Português brasileiro](README.pt-BR.md) · [Installation](integrations/README.md) · [Examples](examples/README.md) · [Contributing](CONTRIBUTING.md)
+[Installation](integrations/README.md) · [Examples](examples/README.md) · [Contributing](CONTRIBUTING.md)
 
 > Clear contracts. Validated boundaries. Proportionate architecture. Honest verification.
 >

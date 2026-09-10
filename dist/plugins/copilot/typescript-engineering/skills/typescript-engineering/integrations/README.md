@@ -39,4 +39,4 @@ Edit the canonical source and regenerate into a fresh directory. Compare the bui
 
 ## Verification and sources
 
-Run `npm run test:packaging`, `npm run validate`, `npm run typecheck`, `npm test` and `npm run check:packages`. Each exported skill carries a standalone validator and examples. The source checkout's package check compares the versioned bundles to canonical files; a standalone installed skill does not contain the sibling distribution tree. See [packaging results](RESULTS.md) for actual checks; successful generation is not native runtime verification. [Primary sources](SOURCES.md) record current format evidence. [Português](README.pt-BR.md).
+Run `npm run test:packaging`, `npm run validate`, `npm run typecheck`, `npm test` and `npm run check:packages`. Each exported skill carries a standalone validator and examples. The source checkout's package check compares the versioned bundles to canonical files; a standalone installed skill does not contain the sibling distribution tree. See [packaging results](RESULTS.md) for actual checks; successful generation is not native runtime verification. [Primary sources](SOURCES.md) record current format evidence.

@@ -1,6 +1,6 @@
 # Contributing and publication
 
-Keep the core framework independent and in clear English; update the Portuguese usage guide when user-facing behavior changes. Route specialized guidance to optional references instead of expanding every task's context.
+Keep the core framework independent and in clear English; update the usage guides when user-facing behavior changes. Route specialized guidance to optional references instead of expanding every task's context.
 
 ## Change process
 
