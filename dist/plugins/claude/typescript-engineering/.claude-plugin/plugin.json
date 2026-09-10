@@ -2,5 +2,19 @@
   "name": "typescript-engineering",
   "version": "0.1.0",
   "description": "Practical TypeScript engineering with validated boundaries and evidence-based verification.",
+  "author": {
+    "name": "Daniel Braga"
+  },
+  "homepage": "https://github.com/bluenzzz/typescript-engineering",
+  "repository": "https://github.com/bluenzzz/typescript-engineering",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "skills",
+    "code-review",
+    "debugging",
+    "best-practices",
+    "workflows"
+  ],
   "skills": "./skills/"
 }

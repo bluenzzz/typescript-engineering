@@ -27,6 +27,9 @@ export function createManifest(target, metadata) {
   const base = { name: metadata.name, version: metadata.version, description };
   if (target === 'gemini') return base;
   if (metadata.author) base.author = { name: metadata.author };
+  for (const key of ['homepage', 'repository', 'license', 'keywords']) {
+    if (metadata[key] !== undefined) base[key] = metadata[key];
+  }
   base.skills = './skills/';
   if (target === 'codex') {
     if (!metadata.author) throw new Error('Codex packaging requires an author; supply --author with the owner-approved name.');
@@ -181,7 +184,8 @@ async function main() {
   }
   const author = options['--author'] ?? (typeof pkg.author === 'string' ? pkg.author : pkg.author?.name);
   const bundles = await buildPackages({ sourceRoot, output: options['--out'] ?? path.join(sourceRoot, 'dist/plugins'),
-    metadata: { name: pkg.name, version: pkg.version, ...(author ? { author } : {}) }, targets });
+    metadata: { name: pkg.name, version: pkg.version, ...(author ? { author } : {}),
+      homepage: pkg.homepage, repository: pkg.repository, license: pkg.license, keywords: pkg.keywords }, targets });
   console.log(`Built ${bundles.length} packages: ${bundles.map(bundle => bundle.target).join(', ')}`);
 }
 

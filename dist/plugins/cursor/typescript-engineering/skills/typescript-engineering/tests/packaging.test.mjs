@@ -43,6 +43,20 @@ test('each plugin format uses its documented discovery contract', () => {
   assert.ok(!('hooks' in codex));
 });
 
+test('publisher metadata reaches compatible manifests without adding unsupported fields', () => {
+  const publisher = { ...metadata, homepage: 'https://github.com/bluenzzz/typescript-engineering',
+    repository: 'https://github.com/bluenzzz/typescript-engineering', license: 'MIT',
+    keywords: ['typescript', 'skills'] };
+  for (const target of ['claude', 'copilot', 'cursor', 'codex']) {
+    const manifest = createManifest(target, publisher);
+    for (const key of ['homepage', 'repository', 'license', 'keywords']) {
+      assert.deepEqual(manifest[key], publisher[key], `${target}: ${key}`);
+    }
+  }
+  assert.deepEqual(createManifest('antigravity', publisher), { name: metadata.name });
+  assert.equal(createManifest('gemini', publisher).homepage, undefined);
+});
+
 test('missing authorship blocks Codex packaging without inventing identity', () => {
   assert.throws(() => createManifest('codex', { ...metadata, author: undefined }), /author/i);
   assert.ok(!('author' in createManifest('claude', { ...metadata, author: undefined })));

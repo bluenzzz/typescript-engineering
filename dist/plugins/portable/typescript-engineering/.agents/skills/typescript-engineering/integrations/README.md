@@ -6,13 +6,13 @@ The root skill is the single maintained source. The generator creates independen
 
 For direct skill installation from this repository, use `node scripts/install-skill.mjs --target codex --project ../my-app`, replacing the project path with an existing directory. Targets: codex, claude, copilot, cursor, antigravity, opencode and portable. This includes all relative resources and refuses an existing destination. The Codex plain skill does not require plugin author metadata. Gemini uses the extension route below.
 
-To regenerate the seven currently distributable packages into a fresh directory:
+To regenerate all eight distribution packages into a fresh directory:
 
 ```sh
-node scripts/package-plugins.mjs --targets claude,copilot,cursor,antigravity,opencode,gemini,portable --out dist/plugins-next
+node scripts/package-plugins.mjs --out dist/plugins-next
 ```
 
-All-target generation with `npm run package:plugins -- --out dist/plugins-next` additionally requires owner-approved author metadata in `package.json` or `--author` for Codex. Use `node scripts/package-plugins.mjs --help` for options.
+The generator reads Daniel Braga's author name, GitHub URLs, MIT license and keywords from `package.json`. Claude Code, Copilot, Cursor and Codex receive the supported publisher fields. Other formats keep their own manifest contracts; every bundle includes the project metadata and license. Use `node scripts/package-plugins.mjs --help` for options.
 
 Default output is `dist/plugins/`. Existing output is refused to protect local changes; select a fresh directory with `--out dist/plugins-next` for another build. The generator does not install, publish, edit user profiles or register marketplaces. Preserve hidden manifest directories when copying/zipping. Every bundled skill includes the project's [MIT License](../LICENSE).
 
@@ -22,7 +22,7 @@ Paths below are relative to `dist/plugins/`. Commands are for the source reposit
 
 | Target | Artifact | Installation or use |
 | --- | --- | --- |
-| Codex | Plain skill available now; plugin artifact not yet generated | Use the project installer above. After plugin authorship is provided, generate its manifest and register it in the intended marketplace before using its actual install selector. |
+| Codex | `dist/plugins/codex/typescript-engineering` | Use the project installer for a native skill, or register the plugin package in your intended marketplace before using its actual install selector. |
 | Claude Code | `claude/typescript-engineering/.claude-plugin/plugin.json` | Session-local trial: `claude --plugin-dir ./dist/plugins/claude/typescript-engineering`. Invoke `/typescript-engineering:typescript-engineering`. |
 | Copilot CLI | `copilot/typescript-engineering/plugin.json` | `copilot plugin install ./dist/plugins/copilot/typescript-engineering`. Check `copilot plugin list`. |
 | Cursor | `cursor/typescript-engineering/.cursor-plugin/plugin.json` | Copy the complete plugin folder into `~/.cursor/plugins/local/` and inspect Customize → Plugins. |

@@ -1,0 +1,31 @@
+{
+  "name": "typescript-engineering",
+  "version": "0.1.0",
+  "description": "Practical TypeScript engineering with validated boundaries and evidence-based verification.",
+  "author": {
+    "name": "Daniel Braga"
+  },
+  "homepage": "https://github.com/bluenzzz/typescript-engineering",
+  "repository": "https://github.com/bluenzzz/typescript-engineering",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "skills",
+    "code-review",
+    "debugging",
+    "best-practices",
+    "workflows"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TypeScript Engineering",
+    "shortDescription": "Practical TypeScript engineering",
+    "longDescription": "Practical TypeScript engineering with validated boundaries and evidence-based verification.",
+    "developerName": "Daniel Braga",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use typescript-engineering to review this TypeScript change."
+    ]
+  }
+}

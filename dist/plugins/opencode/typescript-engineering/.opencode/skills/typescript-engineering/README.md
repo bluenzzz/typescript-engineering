@@ -55,7 +55,7 @@ In Claude Code, invoke `/typescript-engineering:typescript-engineering`. See the
 
 | Assistant | Available route | Project skill location |
 | --- | --- | --- |
-| **Codex** | Native skill now; plugin awaits approved author metadata | `.agents/skills/typescript-engineering/` |
+| **Codex** | Native skill or plugin package for marketplace registration | `.agents/skills/typescript-engineering/` |
 | **Claude Code** | Plugin or native skill | `.claude/skills/typescript-engineering/` |
 | **GitHub Copilot** | CLI plugin; native skill on supported surfaces | `.github/skills/typescript-engineering/` |
 | **Cursor** | Plugin or native skill | `.cursor/skills/typescript-engineering/` |
@@ -64,7 +64,7 @@ In Claude Code, invoke `/typescript-engineering:typescript-engineering`. See the
 | **Gemini CLI** | Extension with a bundled skill | Extension command above |
 | **Other assistants** | Agent Skills or manual attachment | Follow the host's documentation |
 
-**Verification status:** automated packaging and installer checks pass. Claude's manifest validator passed with an author warning. Native model sessions across these hosts have not been tested. See [actual results](integrations/RESULTS.md).
+**Verification status:** automated packaging and installer checks pass. Native skill discovery and reference loading were checked in Codex. Plugin activation across hosts has not been tested. See [actual results](integrations/RESULTS.md).
 
 ## What it helps with
 
@@ -129,13 +129,13 @@ npm run check:packages
 
 On PowerShell with script execution disabled, use `npm.cmd`. `npm test` builds and runs behavior tests; typechecking includes negative contracts. `check:packages` detects stale snapshots or modified exported resources.
 
-Generate a fresh author-free distribution:
+Generate a fresh distribution for all eight targets:
 
 ```
-node scripts/package-plugins.mjs --targets claude,copilot,cursor,antigravity,opencode,gemini,portable --out dist/plugins-next
+node scripts/package-plugins.mjs --out dist/plugins-next
 ```
 
-The generator refuses existing output. Review the artifacts before replacing the versioned `dist/plugins/` tree. `dist/plugins-next/` remains ignored; `dist/plugins/` is allowed by Git. Codex plugin generation also requires approved `--author` metadata; native Codex skill installation does not.
+The generator refuses existing output. Review the artifacts before replacing the versioned `dist/plugins/` tree. `dist/plugins-next/` remains ignored; `dist/plugins/` is allowed by Git. Publisher metadata is maintained in `package.json`: Daniel Braga, the GitHub repository, MIT license and discovery keywords.
 
 ## Troubleshooting
 
