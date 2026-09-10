@@ -152,4 +152,8 @@ The generator refuses existing output. Review the artifacts before replacing the
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for changes, source updates and evaluation. Official language, runtime and security references are recorded with dates in the [source register](references/sources.md).
 
-This is engineering guidance, not a security audit or correctness guarantee. The example does not include production HTTP, database or identity-provider integration. No external publication or public marketplace listing has been performed. **The owner must select a distribution license before community publication.**
+This is engineering guidance, not a security audit or correctness guarantee. The example does not include production HTTP, database or identity-provider integration. No external publication or public marketplace listing has been performed.
+
+## License
+
+[MIT](LICENSE) © 2026 Daniel Braga.

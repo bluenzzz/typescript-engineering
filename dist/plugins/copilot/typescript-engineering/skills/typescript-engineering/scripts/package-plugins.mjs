@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 const description = 'Practical TypeScript engineering with validated boundaries and evidence-based verification.';
 const supported = new Set(['codex', 'claude', 'copilot', 'cursor', 'antigravity', 'opencode', 'gemini', 'portable']);
 const directories = ['references', 'examples', 'evaluations', 'scripts', 'tests', 'integrations'];
-const rootFiles = ['SKILL.md', 'README.md', 'CONTRIBUTING.md', 'package.json', 'package-lock.json', '.gitignore'];
+const rootFiles = ['SKILL.md', 'README.md', 'CONTRIBUTING.md', 'LICENSE', 'package.json', 'package-lock.json', '.gitignore'];
 const excluded = new Set(['node_modules', 'dist', '.git', '.npm-cache']);
 
 function checkMetadata(metadata) {
@@ -114,7 +114,7 @@ export async function buildPackages({ sourceRoot, output, metadata, targets }) {
       `The [canonical skill](${config.skillRoot}/SKILL.md) and all its relative resources are bundled. ` +
       `No runtime hooks, remote services or credentials are included. ` +
       `A generated package is not proof of successful loading in the host application.\n\n` +
-      `No distribution license has been selected; choose one before public publication.\n`);
+      `Licensed under the [MIT License](${config.skillRoot}/LICENSE).\n`);
     bundles.push({ target, kind: config.kind, path: `${target}/${metadata.name}`, skillRoot: config.skillRoot });
   }
   await writeFile(path.join(output, 'build-manifest.json'), JSON.stringify({

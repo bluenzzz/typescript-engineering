@@ -14,7 +14,7 @@ node scripts/package-plugins.mjs --targets claude,copilot,cursor,antigravity,ope
 
 All-target generation with `npm run package:plugins -- --out dist/plugins-next` additionally requires owner-approved author metadata in `package.json` or `--author` for Codex. Use `node scripts/package-plugins.mjs --help` for options.
 
-Default output is `dist/plugins/`. Existing output is refused to protect local changes; select a fresh directory with `--out dist/plugins-next` for another build. The generator does not install, publish, edit user profiles or register marketplaces. Preserve hidden manifest directories when copying/zipping. No license is assigned by the generator.
+Default output is `dist/plugins/`. Existing output is refused to protect local changes; select a fresh directory with `--out dist/plugins-next` for another build. The generator does not install, publish, edit user profiles or register marketplaces. Preserve hidden manifest directories when copying/zipping. Every bundled skill includes the project's [MIT License](../LICENSE).
 
 ## Formats and use
 

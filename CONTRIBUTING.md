@@ -19,10 +19,10 @@ Keep each commit focused on one purpose and write its message in English: `type(
 
 Review staged changes before committing. Regenerate distribution packages after source edits and verify them with `npm run check:packages`.
 
-## License before public release
+## License
 
-No license has been selected for this draft package. The owner must decide distribution and contribution terms before publication. Discuss whether a permissive license such as MIT or Apache-2.0 fits the intended project and whether documentation needs separate treatment. Read the chosen license text and confirm rights to included material; this guide does not select legal terms.
+This project is licensed under the [MIT License](LICENSE), copyright 2026 Daniel Braga. Preserve the copyright and permission notice when redistributing copies or substantial portions of the project.
 
-Add the actual license text and truthful copyright/notice details, then update README and optional frontmatter license metadata consistently. Do not invent an author, year of authorship, contributor agreement or third-party permission. Source links do not grant redistribution rights. This package summarizes recommendations instead of copying manuals.
+Include only material you have the right to contribute and preserve required third-party notices. Source links do not grant redistribution rights. This package summarizes recommendations instead of copying manuals.
 
 Publishing, pushing, creating public releases and installing into other users' environments are separate actions requiring the appropriate authorization. No external publication is part of creating these files.
