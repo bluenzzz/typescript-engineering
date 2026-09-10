@@ -1,0 +1,81 @@
+{
+  "name": "typescript-engineering",
+  "version": "0.1.0",
+  "bundles": [
+    {
+      "target": "claude",
+      "kind": "plugin",
+      "path": "claude/typescript-engineering",
+      "skillRoot": "skills/typescript-engineering"
+    },
+    {
+      "target": "copilot",
+      "kind": "plugin",
+      "path": "copilot/typescript-engineering",
+      "skillRoot": "skills/typescript-engineering"
+    },
+    {
+      "target": "cursor",
+      "kind": "plugin",
+      "path": "cursor/typescript-engineering",
+      "skillRoot": "skills/typescript-engineering"
+    },
+    {
+      "target": "antigravity",
+      "kind": "plugin",
+      "path": "antigravity/typescript-engineering",
+      "skillRoot": "skills/typescript-engineering"
+    },
+    {
+      "target": "opencode",
+      "kind": "skill",
+      "path": "opencode/typescript-engineering",
+      "skillRoot": ".opencode/skills/typescript-engineering"
+    },
+    {
+      "target": "gemini",
+      "kind": "extension",
+      "path": "gemini/typescript-engineering",
+      "skillRoot": "skills/typescript-engineering"
+    },
+    {
+      "target": "portable",
+      "kind": "skill",
+      "path": "portable/typescript-engineering",
+      "skillRoot": ".agents/skills/typescript-engineering"
+    }
+  ],
+  "sourceSha256": {
+    ".gitignore": "d6bca389c3f20c021bb011288b94dfda2515d8226c046967db1df9c0d1c5239d",
+    "CONTRIBUTING.md": "7e9c43cdb6d63cae52c73540429ac3a4ecbe17f396ee487221f9f742ec1ab74b",
+    "README.md": "13518e9f61b1f4b9669f20b2892f429dfcb2e3a3e8604062a5ab3290ba4711de",
+    "README.pt-BR.md": "ac45181e811f531443c7856244dfd444494129165b63517ac88b5777fb080049",
+    "SKILL.md": "c96e847f14d1bd3b1afee7775dd1880ac42c34703fab68f70d9fb773015e38a0",
+    "evaluations/RESULTS.md": "f046ff907844ed6a6c8f45a2f91ab4e752e0d52c0794ac2adeb33d2b59d61474",
+    "evaluations/scenarios.md": "ad11db65d201e065df39e109ed0a88be9a07370917783014b8ff00e3ac6c1918",
+    "examples/README.md": "09c3ffe6b27819f583b2c9e53bdca22b0142e1182134293128a07f2748164049",
+    "examples/src/contracts.types.ts": "a13d3c903009a14934b4dd063f686a46bb875ee84ee199b5426027724c02b6f1",
+    "examples/src/invoice.ts": "5ad394a19ddb70553cd90d0b0286370ccb04c7e47b8937f8d2df64d1c22f0465",
+    "examples/tests/invoice.test.mjs": "d421ac3de6a8d70eb2d2f337cd4405066f2fe923e0ebe39452f0ec68b4d9321e",
+    "examples/tsconfig.json": "d01e69334b8906df638e82ac6f6a45b0d8c6f0f4a9ce18191d171fe54a99d3fc",
+    "integrations/README.md": "a72334338040716b561c18aa2b09dcc7e183bce03d313694b82ac45d399407e8",
+    "integrations/README.pt-BR.md": "afe38f2c13af1a2d9e5d290677f6c0f87a4ae6741a6b3a2d9f66d25fd6ac45e5",
+    "integrations/RESULTS.md": "5acfa11aa53cc8b484cde08cc8c0950e739fa56d0fc3d5e8299466b37dd6cc4c",
+    "integrations/SOURCES.md": "993605ae618bb5b28a286dc2c00c67a4e837ba204be709a65d7666a01a3f8754",
+    "integrations/targets.json": "6cabd42586a92aa4b066bef268a80f46a0535c29063d537c0b98a1da6133bb64",
+    "package-lock.json": "4e75b30f2459ed465ab8d4d907b4268bf5b47ed5e8a74962f4c028a4d8f059e9",
+    "package.json": "1dbf51db7228586520dcab863ca31f46acf887f3d9517dcbeaa8e4504e534d01",
+    "references/architecture.md": "a2a59c019779945809960ad13267ccafb4cd3730996b180f7ec211b3f1969792",
+    "references/performance.md": "b490fcd6d686c84976e046e42158e206e4e11458239a5d96cb497c7a7845bde7",
+    "references/react.md": "b4ca22934c4a6bb65f20622bb7b282b862bf3cc0d65bb11d5124ff96b67cb03d",
+    "references/security.md": "c7d7da5a9db1d044709706c6caf7080e30f5e3ec67f80530bc340752ae12dd6c",
+    "references/sources.md": "43d59aaf0d629e85c07e48b281bb0f625b4b8073cfd6e4cdf7230ae329c96d6c",
+    "references/types-and-config.md": "6190749339431f29fa31d0c405db10fda29a0cbce825d9b511872b675130711f",
+    "references/verification.md": "21b51a33700c97a38789eb9a8f65b295c4d4cf5843db4a86df64b9940f56b1b0",
+    "scripts/install-skill.mjs": "10cbf2955ab17af60f57a0acbac1b4e742ba1da98ff611db7954659e0fdb63ab",
+    "scripts/package-plugins.mjs": "82a726e185dd7db46499cad8ab4e26f31afad68939d59fdff1416d262dfd1fec",
+    "scripts/validate.mjs": "427270f2687d75bfdadc5f43d5bb027f750ee4c630d30989f26576e15583b0ef",
+    "tests/install-skill.test.mjs": "e7d053bc82be5b36c7ac402216ae6817279306fd2cc8672d53c94ec8a65d8210",
+    "tests/packaging.test.mjs": "d0dc6bab46a1f69ca4821108875667771326329e93017688ccf05abc78437a06"
+  }
+}

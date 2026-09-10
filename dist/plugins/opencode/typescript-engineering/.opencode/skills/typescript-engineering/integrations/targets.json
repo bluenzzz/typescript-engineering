@@ -1,0 +1,10 @@
+{
+  "codex": { "kind": "plugin", "manifest": ".codex-plugin/plugin.json", "skillRoot": "skills/typescript-engineering" },
+  "claude": { "kind": "plugin", "manifest": ".claude-plugin/plugin.json", "skillRoot": "skills/typescript-engineering" },
+  "copilot": { "kind": "plugin", "manifest": "plugin.json", "skillRoot": "skills/typescript-engineering" },
+  "cursor": { "kind": "plugin", "manifest": ".cursor-plugin/plugin.json", "skillRoot": "skills/typescript-engineering" },
+  "antigravity": { "kind": "plugin", "manifest": "plugin.json", "skillRoot": "skills/typescript-engineering" },
+  "opencode": { "kind": "skill", "skillRoot": ".opencode/skills/typescript-engineering" },
+  "gemini": { "kind": "extension", "manifest": "gemini-extension.json", "skillRoot": "skills/typescript-engineering" },
+  "portable": { "kind": "skill", "skillRoot": ".agents/skills/typescript-engineering" }
+}

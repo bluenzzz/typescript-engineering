@@ -1,0 +1,17 @@
+{
+  "name": "typescript-engineering",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "typecheck": "tsc -p examples/tsconfig.json --noEmit",
+    "build": "tsc -p examples/tsconfig.json",
+    "test": "npm run build && node --test examples/tests/invoice.test.mjs",
+    "test:packaging": "node --test tests/packaging.test.mjs tests/install-skill.test.mjs",
+    "package:plugins": "node scripts/package-plugins.mjs",
+    "check:packages": "node scripts/package-plugins.mjs --check"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}
