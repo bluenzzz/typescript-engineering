@@ -1,6 +1,6 @@
 # TypeScript Engineering — antigravity
 
-Generated plugin package, version 0.1.0.
+Generated plugin package, version 0.2.0.
 
 Read [installation instructions](skills/typescript-engineering/integrations/README.md).
 

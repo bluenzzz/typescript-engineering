@@ -1,6 +1,6 @@
 # TypeScript Engineering — portable
 
-Generated skill package, version 0.1.0.
+Generated skill package, version 0.2.0.
 
 Read [installation instructions](.agents/skills/typescript-engineering/integrations/README.md).
 

@@ -1,6 +1,6 @@
 {
   "name": "typescript-engineering",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "bundles": [
     {
       "target": "codex",
@@ -55,7 +55,7 @@
     ".gitignore": "d6bca389c3f20c021bb011288b94dfda2515d8226c046967db1df9c0d1c5239d",
     "CONTRIBUTING.md": "13acb2dfbd08c6ad85911eb7a65dfa2026ddf92614987b24d05ca0c893fbb42e",
     "LICENSE": "ff46aec8f45994cc536743aa1679d26140bbb79a49ee8e413533e1b246e1955f",
-    "README.md": "6c2044f47823be25b5136de7923dab1fca376078d255fa5655e64fe2aaf94343",
+    "README.md": "215d3fe4d7e2dbfe283fa7230524abacfcccce3022204df770be4c70360242d3",
     "SKILL.md": "c96e847f14d1bd3b1afee7775dd1880ac42c34703fab68f70d9fb773015e38a0",
     "evaluations/RESULTS.md": "f046ff907844ed6a6c8f45a2f91ab4e752e0d52c0794ac2adeb33d2b59d61474",
     "evaluations/scenarios.md": "ad11db65d201e065df39e109ed0a88be9a07370917783014b8ff00e3ac6c1918",
@@ -64,12 +64,13 @@
     "examples/src/invoice.ts": "5ad394a19ddb70553cd90d0b0286370ccb04c7e47b8937f8d2df64d1c22f0465",
     "examples/tests/invoice.test.mjs": "d421ac3de6a8d70eb2d2f337cd4405066f2fe923e0ebe39452f0ec68b4d9321e",
     "examples/tsconfig.json": "d01e69334b8906df638e82ac6f6a45b0d8c6f0f4a9ce18191d171fe54a99d3fc",
-    "integrations/README.md": "a547336b25e937b71c81d8b3becbb035eefed04edfcd977c966370a8b231b153",
+    "integrations/README.md": "6e367d9410264526c27652ec6fd0ad8b7fec98f5a7ef3964f50283afb26c64da",
+    "integrations/RELEASE_NOTES.md": "cf3a52646912e445b5e67c9f6af9904e67e954b686a1a142c46bd1cd6f55b364",
     "integrations/RESULTS.md": "dd593f97df0aa10965e9d6506a8c740638cb7447162b910aad16776bfc1e7023",
     "integrations/SOURCES.md": "993605ae618bb5b28a286dc2c00c67a4e837ba204be709a65d7666a01a3f8754",
     "integrations/targets.json": "6cabd42586a92aa4b066bef268a80f46a0535c29063d537c0b98a1da6133bb64",
-    "package-lock.json": "7f74488e294a148b9bf1118428920a6ae66d074079bebbb3b842e5db593f78ce",
-    "package.json": "d9401f28717aa14fb7a58a10caa052618e5f68f356ddfbcbfc213a5039cefcaa",
+    "package-lock.json": "f012f577671393302f70cc51916786ecfcc47af1889fda1dc833cdad55a2c8e7",
+    "package.json": "42ee8c81174257cdaf3987472d350ebd6dc77c356e2b31c54f06a2fcc35933e0",
     "references/architecture.md": "a2a59c019779945809960ad13267ccafb4cd3730996b180f7ec211b3f1969792",
     "references/performance.md": "b490fcd6d686c84976e046e42158e206e4e11458239a5d96cb497c7a7845bde7",
     "references/react.md": "b4ca22934c4a6bb65f20622bb7b282b862bf3cc0d65bb11d5124ff96b67cb03d",

@@ -4,6 +4,8 @@ The root skill is the single maintained source. The generator creates independen
 
 ## Build
 
+For installation directly from GitHub, run `npx skills add bluenzzz/typescript-engineering` and select your assistant and scope. See the [skills CLI documentation](https://skills.sh/docs). The local installer below remains available for an existing checkout.
+
 For direct skill installation from this repository, use `node scripts/install-skill.mjs --target codex --project ../my-app`, replacing the project path with an existing directory. Targets: codex, claude, copilot, cursor, antigravity, opencode and portable. This includes all relative resources and refuses an existing destination. The Codex plain skill does not require plugin author metadata. Gemini uses the extension route below.
 
 To regenerate all eight distribution packages into a fresh directory:

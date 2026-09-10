@@ -1,6 +1,6 @@
 # TypeScript Engineering — gemini
 
-Generated extension package, version 0.1.0.
+Generated extension package, version 0.2.0.
 
 Read [installation instructions](skills/typescript-engineering/integrations/README.md).
 

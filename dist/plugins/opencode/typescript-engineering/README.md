@@ -1,6 +1,6 @@
 # TypeScript Engineering — opencode
 
-Generated skill package, version 0.1.0.
+Generated skill package, version 0.2.0.
 
 Read [installation instructions](.opencode/skills/typescript-engineering/integrations/README.md).
 

@@ -5,6 +5,7 @@
 ![TypeScript examples](https://img.shields.io/badge/examples-TypeScript_5.9.3-3178C6?logo=typescript&logoColor=white)
 ![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-5B21B6)
 ![Framework independent](https://img.shields.io/badge/core-framework_independent-0F766E)
+[![skills.sh](https://skills.sh/b/bluenzzz/typescript-engineering)](https://skills.sh/bluenzzz/typescript-engineering)
 
 [Installation](integrations/README.md) · [Examples](examples/README.md) · [Contributing](CONTRIBUTING.md)
 
@@ -14,7 +15,15 @@
 
 ## Quick start
 
-From this repository's root, install the skill into an **existing project**:
+Install from GitHub with the [skills CLI](https://skills.sh/docs):
+
+```sh
+npx skills add bluenzzz/typescript-engineering
+```
+
+Follow the prompts to choose your assistant and installation scope. On PowerShell with script execution disabled, use `npx.cmd`. The skills.sh directory tracks installations through this CLI; adding the badge alone does not register an installation or guarantee a ranking.
+
+If you already cloned this repository, you can instead use its local installer from the repository root with an **existing project**:
 
 ```
 node scripts/install-skill.mjs --target codex --project ../my-app
