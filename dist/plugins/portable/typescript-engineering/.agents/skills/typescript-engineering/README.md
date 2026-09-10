@@ -85,6 +85,7 @@ In Claude Code, invoke `/typescript-engineering:typescript-engineering`. See the
 | **Architecture and UI** | Existing conventions, cohesive responsibilities, composition and explicit UI states. |
 | **Performance** | Separate runtime from compiler cost; measure before claiming a gain. |
 | **Verification** | Relevant behavior tests and an exact account of what ran and what remains uncertain. |
+| **Optional E2E** | Proportionate test-layer selection, critical journeys, stable tests and honest execution evidence. See the [E2E guide](references/e2e.md). |
 
 The assistant distinguishes language behavior, contextual recommendations and project conventions. It responds in your language. A small fix should remain a small fix.
 
@@ -108,7 +109,7 @@ Review this reusable table: which props represent unrelated responsibilities?
 The endpoint is slow. Propose measurements before changing its implementation.
 ```
 
-[Executable examples](examples/README.md) demonstrate validation, owner/tenant authorization, errors and public type contracts. [Eight evaluation scenarios](evaluations/scenarios.md) exercise decisions under realistic constraints.
+[Executable examples](examples/README.md) demonstrate validation, owner/tenant authorization, errors and public type contracts. [Twelve evaluation scenarios](evaluations/scenarios.md) exercise decisions under realistic constraints, including optional E2E guidance. The guidance reuses project tooling; this repository does not install or run a browser E2E suite.
 
 ## Repository map
 

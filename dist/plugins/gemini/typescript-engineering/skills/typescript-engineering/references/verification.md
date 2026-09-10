@@ -8,6 +8,8 @@ Test meaningful behavior: accepted/rejected inputs, malformed syntax, absence, z
 
 The example suite uses Node's built-in [test runner](https://nodejs.org/docs/latest-v24.x/api/test.html). This is a package choice, not a required testing framework for consumers.
 
+Choose the simplest test layer that detects the relevant failure: unit tests for isolated logic, integration tests for component contracts, and E2E for journeys through the assembled system. Small changes without material journey risk do not require new E2E tests. For journey coverage or flaky E2E investigation, consult [optional E2E guidance](e2e.md).
+
 ## Review to produce corrections
 
 | Question | Observable action when a problem exists |

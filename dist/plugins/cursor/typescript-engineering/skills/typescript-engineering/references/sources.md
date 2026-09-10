@@ -29,3 +29,13 @@ Consulted **2026-09-10** using web retrieval. Links below were opened successful
 The initially attempted `handbook/2/object-types.html` address and Node's `latest-v24.x/api/packages.html` did not return usable content. They are not treated as successful consultations. Versioned runtime docs should be consulted for new version-sensitive APIs; no reliance on unverified Node 26-only APIs is intended.
 
 For maintenance, record the actual access date, source version, claim and verification environment. Keep installed/compiler-tested versions separate from rolling documentation versions. Without web access, label fresh-source verification unavailable and use supplied/versioned material; do not invent a consultation date.
+
+## Optional E2E guidance
+
+Consulted **2026-09-10** through successful web retrieval. These support the Playwright-specific notes in [E2E guidance](e2e.md); tool selection and test-layer choices remain contextual recommendations.
+
+| Source | Supported topic | Version/scope |
+| --- | --- | --- |
+| [Playwright best practices](https://playwright.dev/docs/best-practices) | User-facing locators, retrying assertions, isolated state and controlled dependencies | Rolling documentation; no Playwright version installed or executed here |
+| [Playwright authentication](https://playwright.dev/docs/auth) | Reusable authenticated state, account isolation for state-changing tests and sensitive session files | Rolling documentation; verify APIs against the consuming project's installed version |
+| [Playwright CI](https://playwright.dev/docs/ci) | Browser/system dependencies, reproducible CI execution and report artifacts | Rolling documentation; container example identified 1.63.0, not a tested compatibility claim |

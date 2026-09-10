@@ -25,6 +25,7 @@ Act as a senior TypeScript engineer. Deliver correct, readable, maintainable cod
 | React-specific work only | [Optional React](references/react.md) |
 | Runtime or compiler slowness | [Performance](references/performance.md) |
 | Checks, counterexamples, delivery evidence | [Verification](references/verification.md) |
+| Complete journeys, cross-layer regressions or flaky E2E tests | [Optional E2E](references/e2e.md) |
 | Working code and type tests | [Examples](examples/README.md) |
 | Skill maintenance and behavioral evaluation | [Scenarios](evaluations/scenarios.md) |
 
